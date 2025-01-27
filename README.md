@@ -1,5 +1,5 @@
 # Unofficial IGP Thesis Template
-[中文](#非官方IGP论文型板) [Bahasa Melayu](#templat-tesis-igp-tak-rasmi)
+[中文](#非官方IGP论文型板) ❀ [Bahasa Melayu](#templat-tesis-igp-tak-rasmi)
 
 This IGP thesis template is based on the unofficial [ASE thesis template](https://www.overleaf.com/latex/templates/phd-thesis-ntu-singapore-asian-school-of-the-environment-unofficial/jgtmdbzcrzzt) by Marciar Rabonza.  Please thank her for doing the heavy lifting.
 
@@ -73,7 +73,21 @@ The class file ```IGPthesis.cls``` is distributed under the GNU General Public L
 类档案```IGPthesis.cls```被发布在GNU通用公共许可证（GPL）3.0版本下。```IEEEtran.bst```与```kbib.bst```被发布在LaTeX项目公共许可证（LPPL）下。据我所知Rabonza博士公开原本```*.tex```档案在知识共享许可协议CC BY 4.0下并且我同样公开我所改变的```*.tex```档案在同一个许可证下。
 
 # Templat Tesis IGP Tak Rasmi
-Templat ini untuk tesis IGP berdasarkan [templat tesis ASE](https://www.overleaf.com/latex/templates/phd-thesis-ntu-singapore-asian-school-of-the-environment-unofficial/jgtmdbzcrzzt) tak rasmi oleh Marciar Rabonza.  Sila terima kasih kepadanya untuk angkat berat.
+Templat tesis IGP ini berdasarkan [templat tesis ASE](https://www.overleaf.com/latex/templates/phd-thesis-ntu-singapore-asian-school-of-the-environment-unofficial/jgtmdbzcrzzt) tak rasmi oleh Marciar Rabonza.  Sila terima kasih kepadanya untuk angkat berat.
+
+## Arahan
+1. Dalam Github klik "<> Code" kemudian "Download ZIP."
+2. Log masuk Overleaf dan pilih "New Project" dan kemudian "Upload Project."  Pilih fail ZIP yang anda baru muat turun.
+3. Kemas kini tajuk dan pengarang dalam ```main.tex```.
+4. Tambah abstrak ke ```Intro/abstract.tex```.
+5. Tambah sebarang pengakuan ke ```Intro/acknowledgements.tex```.
+6. Tambah senarai akronim yang muncul dalam tesis ke ```Intro/acronyms.tex```.
+7. Ingat berubah teks yang terletak di ```Intro/declarations.tex``` untuk memasukkan senarai penerbitan anda.  Jangan lupa kemas kini fail tandatangan dalam ```Signatures``` dengan tandatangan anda.
+8. Mengikut keperluan tambah bab baru ke ```main.tex```.
+9. Minum kopi dan menulis!
+
+## Log Perubahan
+Saya telah membuat perubahan berikut daripada templat ASE tak rasmi:
 
 
 
