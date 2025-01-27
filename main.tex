@@ -1,0 +1,112 @@
+\documentclass[ieeebib]{class/IGPthesis} % Use the option kbib if you prefer AAAI style citations
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{subcaption} % For complex figures
+\usepackage[titletoc, header, page]{appendix}
+\usepackage{graphicx}
+\usepackage{array}      % For fancy tables
+\usepackage{booktabs}   % For formal tables
+\usepackage{longtable}  % For long tables
+\usepackage{lipsum}
+\usepackage{siunitx}    % International System of Units
+
+% MY'25: Removing breakurl because it was causing problems
+% MY'25: DO NOT include natbib or any other bibliography package here, it will be handled by the IGPthesis class
+\usepackage{datetime}   % To manage date format
+\usepackage[pdfusetitle]{hyperref}
+\usepackage{setspace}   % To configure dobule/single space
+\usepackage{multirow}
+\usepackage{pdflscape} 
+\usepackage{afterpage}
+\usepackage{capt-of}% or use the larger `caption` package
+\usepackage{pdfpages} %include pdf files in appendix
+\usepackage{stackengine} %for overlapping figures
+\usepackage{epigraph} % for highlights
+
+% MY'25: Here's some additional package I found useful:
+\usepackage[nohyperlinks]{acronym}             % Easily manage acronyms
+\usepackage{adjustbox}                         % Rotate figures by 90 degrees
+\usepackage{algorithmic}                       % Provide algorithm environment
+\usepackage[linesnumbered,ruled]{algorithm2e}  % Nicer algorithms
+
+% For block quote colored:
+\usepackage[most]{tcolorbox}
+\definecolor{block-gray}{gray}{0.85}
+\newtcolorbox{blockquote}{colback=block-gray,grow to right by=-1mm,grow to left by=-1mm,boxrule=0pt,boxsep=0pt,breakable}
+
+%%% Handle hypenation for long words
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+% MY'24: the following can be helpful when debugging margins
+%\geometry{showframe}
+
+% Title goes here
+\title{Thesis Title}
+
+% Name should be in block (uppercase) letters as it appears on your matriculation card
+\author{SURNAME GIVEN-NAMES}
+
+% Affiliation format:
+% Line 1 - "Interdisciplinary Graduate Programme"
+% Line 2 - Research Center Name
+\affiliation{Interdisciplinary Graduate Programme \\ Energy Research Institute @ NTU}
+\affilogo{class/logos/logo_ntu.png}
+
+\TypeOfDocument{A thesis submitted to the Nanyang Technological University in partial fulfilment of the requirement for the degree of Doctor of Philosophy}
+
+%% Date without the day of the month
+\newdateformat{titledate}{\THEYEAR}
+\newdateformat{signaturedate}{\THEDAY\hspace{0.5em}\shortmonthname[\THEMONTH] \THEYEAR}
+\date{\titledate\today}
+
+% MY'25: Adding Theorem and Lemma environemnts
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+
+\begin{document}
+    %% This command generates all the pages before Chapter 1
+    %% Cover, Abstract, Declaration, Acknowledgements, Contents
+    \makefrontmatter
+
+    %% Contents are still in roman numbers, don't touch this
+    \cleardoublepage
+
+    %% Arabic numbers from Chapter 1 to the end.
+    \pagenumbering{arabic}
+
+    \ifdefined\isdraft
+        \doublespacing
+    \else
+        \onehalfspacing
+    \fi
+
+    %% Chapters. Include here all your chapters
+    \include{Chapters/chapter1.tex}
+    \include{Chapters/chapter2.tex}
+    \include{Chapters/chapter3.tex}
+    \include{Chapters/chapter4.tex}
+
+
+    %% Bibliography using bibtex
+    \makebibliography{refs.bib}
+
+    %% Appendices. If you don't have any appendices, comment the appendices section
+    \begin{appendices}
+
+        %% Include here all your appendices
+        \include{Appendices/appendixA}
+        \include{Appendices/appendixB}
+
+    \end{appendices}
+
+\end{document}
+
+
