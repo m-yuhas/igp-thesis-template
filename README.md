@@ -1,5 +1,5 @@
 # Unofficial IGP Thesis Template
-[中文](#非官方IGP论文型板) ❀ [Bahasa Melayu](#templat-tesis-igp-tak-rasmi)
+[简体中文](#非官方IGP论文型板) ❀ [Bahasa Melayu](#templat-tesis-igp-tak-rasmi)
 
 This IGP thesis template is based on the unofficial [ASE thesis template](https://www.overleaf.com/latex/templates/phd-thesis-ntu-singapore-asian-school-of-the-environment-unofficial/jgtmdbzcrzzt) by Marciar Rabonza.  Please thank her for doing the heavy lifting.
 
@@ -27,9 +27,9 @@ I have made the following changes from the unofficial ASE template:
 * The abstract is now formatted in the same way as the declarations and other front matter.
 * Added a front matter section for list of acronyms.
 * Added an "Other Publications" section for works published during the PhD that are not presented in the thesis.
-* Updated the text in the candidate statement of originality, supervisor declaration, and authorship attribution statement to match the example provided by GC [[1](<https://entuedu.sharepoint.com/sites/Student/dept/sasd/oas/SitePages/Qualifying Examination and Thesis/Format of Final Thesis.aspx>)].
+* Updated the text in the statement of originality, supervisor declaration statement, and authorship attribution statement to match the example provided by GC [[1](<https://entuedu.sharepoint.com/sites/Student/dept/sasd/oas/SitePages/Qualifying Examination and Thesis/Format of Final Thesis.aspx>)].
 * Rearranged the front matter to match the order recommended by GC [[1](<https://entuedu.sharepoint.com/sites/Student/dept/sasd/oas/SitePages/Qualifying Examination and Thesis/Format of Final Thesis.aspx>)].
-* Automatically sign the candidate stament of originality, supervisor declaration, and authorship attribution statement if you have a transparent PNG or PDF of you and your supervisor's signatures.
+* Automatically sign the stament of originality, supervisor declaration statement, and authorship attribution statement if you have a transparent PNG or PDF of you and your supervisor's signatures.
 * Added proof, theorem, and lemma environments.
 * Added examples for subfigures, proofs, theorems, lemmas, and algorithms.
 
@@ -63,9 +63,9 @@ The class file ```IGPthesis.cls``` is distributed under the GNU General Public L
 * 现在提要章节版式于声明章节等前面实物一样。
 * 加缩语单章节于前面实物。
 * 加“其他刊物”章节为博士学程当发表但在论文没有介绍的原作。
-* 更新候选人原创声明、博士导师声明、与作者归功声明的原文为顺应GC的例子【[一](<https://entuedu.sharepoint.com/sites/Student/dept/sasd/oas/SitePages/Qualifying Examination and Thesis/Format of Final Thesis.aspx>)】。
+* 更新原创声明、博士导师声明、与作者归功声明的原文为顺应GC的例子【[一](<https://entuedu.sharepoint.com/sites/Student/dept/sasd/oas/SitePages/Qualifying Examination and Thesis/Format of Final Thesis.aspx>)】。
 * 改编前面实物为顺应GC所推荐的顺序【[一](<https://entuedu.sharepoint.com/sites/Student/dept/sasd/oas/SitePages/Qualifying Examination and Thesis/Format of Final Thesis.aspx>)】。
-* 自动签名于候选人原创声明、博士导师声明、与作者归功声明如果你有自己和导师的签名为透光PNG或PDF。
+* 自动签名于原创声明、博士导师声明、与作者归功声明如果你有自己和导师的签名为透光PNG或PDF。
 * 加证明、定理、与引理环境。
 * 加例子为分形象、证明、定理、引理、与算法环境。
 
@@ -88,6 +88,22 @@ Templat tesis IGP ini berdasarkan [templat tesis ASE](https://www.overleaf.com/l
 
 ## Log Perubahan
 Saya telah membuat perubahan berikut daripada templat ASE tak rasmi:
+* ```NTUASE_MR.cls``` menjadi ```IGPthesis.cls``` untuk mematuhi skema penamaan fail LaTeX di IEEE.
+* Kelas ```IGPthesis``` sekarang menerima tiga pilihan:
+  * ```twosided``` - guna pilihan ini semasa menyiapkan PDF untuk penjilidan.  Ia akan memasukkan muka surat kosong untuk mengelakkan bab bermula dalam muka surat genap.
+  * ```ieeebib``` - guna pilihan ini jika suka gaya petikan IEEE.
+  * ```kbib``` - guna pilihan ini jika suka gaya petikan AAAI.
+* Keluarkan amaran yang berlaku jika tidak menggunakan XeTeX (untuk saya, pakej breakurl melemparkan ralat semasa menyusun dengan XeTeX).
+* Mengubahsuai muka depan untuk mengikuti contoh yang disediakan oleh GC [[1](<https://entuedu.sharepoint.com/sites/Student/dept/sasd/oas/SitePages/Qualifying Examination and Thesis/Format of Final Thesis.aspx>)].
+* Tambah halaman tajuk untuk mengikuti contoh yang disediakan oleh GC [[1](<https://entuedu.sharepoint.com/sites/Student/dept/sasd/oas/SitePages/Qualifying Examination and Thesis/Format of Final Thesis.aspx>)].
+* Sekarang abstrak diformatkan dengan cara yang sama seperti bahagian pengisytiharan dan perkara hadapan yang lain.
+* Tambah bahagian untuk senarai akronim kepada perkara hadapan.
+* Tambah bahagian "Penerbitan Lain" untuk karya yang diterbitkan semasa menjalani PhD, tetapi tak dibentangkan dalam tesis ini.
+* Kemas kini teks dalam pernyataan keaslian, pernyataan penyelia, dan pernyataan atribusi kepengarangan untuk mengikuti contoh yang disediakan oleh GC [[1](<https://entuedu.sharepoint.com/sites/Student/dept/sasd/oas/SitePages/Qualifying Examination and Thesis/Format of Final Thesis.aspx>)].
+* Menyusun semula perkara hadapan untuk mengikuti susunan disyorkan oleh GC [[1](<https://entuedu.sharepoint.com/sites/Student/dept/sasd/oas/SitePages/Qualifying Examination and Thesis/Format of Final Thesis.aspx>)].
+* Menandatangani secara automatik pernyataan keaslian, pernyataan penyelia, dan pernyataan atribusi kepengarangan jika mempunyai PNG atau PDF telus tandatangan anda dan penyelia anda.
+* Tambah persekitaran pembuktian, teorem, dan lemma.
+* Tambah contoh untuk subfigure, pembuktian, teorem, lemma, dan algoritma.
 
-
-
+## Pelesenan
+Fail kelas ```IGPthesis.cls``` diedarkan di bawah Lesen Awam Am GNU (GPL) 3.0.  ```IEEEtran.bst``` dan ```kbib.bst``` diedarkan di bawah Lesen Awam Projek LaTeX (LPPL).  Sepanjang pengetahuan saya Dr. Rabonza mengeluarkan fail ```*.tex``` asli di bawah Creative Commons CC BY 4.0 dan saya juga mengeluarkan sebarang fail ```*.tex``` yang diubahsuai oleh saya di bawah lesen yang sama.
