@@ -17,10 +17,14 @@ This IGP thesis template is based on the unofficial [ASE thesis template](https:
 ## Change Log
 I have made the following changes from the unofficial ASE template:
 * ```NTUASE_MR.cls``` was renamed to ```IGPthesis.cls``` to match IEEE LaTeX file naming scheme.
-* The ```IGPthesis``` class can now take three options:
+* The ```IGPthesis``` class can now take four options:
   * ```twosided``` - use this option if you are preparing a PDF for binding.  It will insert blank pages to prevent chapters from starting on even pages.
   * ```ieeebib``` - use this option if you prefer the IEEE citation style.
   * ```kbib``` - use this option if you prefer the AAAI citation style.
+  * ```showdiff``` - use this option to modify the behavior of the following change-tracking commands:
+    * ```\change{}``` - if ```showdiff``` is present, highlight text in yellow, else do nothing.
+    * ```\addition{}``` - if ```showdiff``` is present, highlight text in green, else do nothing.
+    * ```\deletion{}``` - if ```showdiff``` is present, strikethrough text in red, else do not display the text.
 * Removed the warning when not using XeTeX (breakurl was throwing errors in XeTeX for me, use it at your own risk).
 * Modified the cover page to match the example provided by GC [[1](<https://entuedu.sharepoint.com/sites/Student/dept/sasd/oas/SitePages/Qualifying Examination and Thesis/Format of Final Thesis.aspx>)].
 * Added a title page to match the example provided by GC [[1](<https://entuedu.sharepoint.com/sites/Student/dept/sasd/oas/SitePages/Qualifying Examination and Thesis/Format of Final Thesis.aspx>)].
