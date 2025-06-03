@@ -19,6 +19,7 @@
 \DeclareOption{twosided}{\def\TWOSIDED{}}
 \DeclareOption{ieeebib}{\def\IEEEBIBSTYLE{}}
 \DeclareOption{kbib}{\def\KBIBSTYLE{}}
+\DeclareOption{showdiff}{\def\SHOWDIFF{}}
 \ProcessOptions\relax
 
 
@@ -29,11 +30,26 @@
     \LoadClass[12pt,a4paper,onecolumn,oneside,openright]{report}
 \fi
 
+
 % MY'24: Use the correct parameters for natbib
 \ifdefined\IEEEBIBSTYLE
     \RequirePackage[numbers, square]{natbib}
 \else
     \RequirePackage[authoryear, round]{natbib}
+\fi
+
+
+% MY'25: If showdiff is set, highlight/strike changes, additions, and deletions
+\RequirePackage{soul}
+\RequirePackage{xcolor}
+\ifdefined\SHOWDIFF
+    \DeclareRobustCommand{\change}[1]{{\sethlcolor{yellow}\hl{#1}}}
+    \DeclareRobustCommand{\addition}[1]{{\sethlcolor{green}\hl{#1}}}
+    \DeclareRobustCommand{\deletion}[1]{{\setstcolor{red}\st{#1}}}
+\else
+    \DeclareRobustCommand{\change}[1]{#1}
+    \DeclareRobustCommand{\addition}[1]{#1}
+    \DeclareRobustCommand{\deletion}[1]{}
 \fi
 
 
